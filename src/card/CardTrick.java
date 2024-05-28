@@ -12,7 +12,7 @@ package card;
  */
 // Name - Dev Dev 
 // Student Number - 991733936
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import java.util.Random;
 
 public class CardTrick {
@@ -56,6 +56,18 @@ public class CardTrick {
         Card luckycard = new Card();
         luckycard.setValue(3);
         luckycard.setSuit("Diamonds");
+        
+        boolean k = false;
+        for (int i=0;i<magicHand.length;i++){
+            if (luckycard.getValue() == magicHand[i].getValue() && luckycard.getSuit().equals(magicHand[i].getSuit())){
+                System.out.println("Congratulations, Your lucky card is in the magicHand");
+                k = true;
+            }
+        }
+        if(k == false){
+            System.out.println("Sorry, Your lucky card is not in magic hand");
+        }
+     
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
