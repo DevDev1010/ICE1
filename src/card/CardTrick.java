@@ -35,7 +35,7 @@ public class CardTrick {
             magicHand[i] = c;
             System.out.println(c.getSuit()+" "+c.getValue());
         }
-        String value = JOptionPane.showInputDialog("Enter a Card value (1-13)");
+        /* String value = JOptionPane.showInputDialog("Enter a Card value (1-13)");
         int realValue  = Integer.parseInt(value);
         
         String suit = JOptionPane.showInputDialog("Enter a suit (0-3 where 0=Hearts, 1=Diamonds, 2=Clubs, 3=Spades)");
@@ -51,7 +51,11 @@ public class CardTrick {
         }
         if (k == false){
             System.out.println("Sorry, your card is not in the magic Hand");
-        }
+        } */
+
+        Card luckycard = new Card();
+        luckycard.setValue(3);
+        luckycard.setSuit("Diamonds");
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
